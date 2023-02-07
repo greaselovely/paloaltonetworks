@@ -21,7 +21,7 @@ def main():
         print("[q or enter to exit]")
         while True:
             model = input("Enter model number: ")
-            if model == "q".lower() or model == "":
+            if model.lower() == "q" or model == "":
                 break
             a.append(model)
         models = create_end_url(a)
